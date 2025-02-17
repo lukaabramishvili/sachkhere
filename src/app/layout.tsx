@@ -1,6 +1,7 @@
 import Header from "./components/Header/header";
 import Footer from "./components/Footer/footer";
 import "./globals.css";
+import { LanguageProvider } from "./context/languageContext";
 
 export default function RootLayout({
   children,
@@ -9,11 +10,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <Header />
-          {children}
-        <Footer />
-      </body>
+      <LanguageProvider>
+        <body>
+          <Header />
+            {children}
+          <Footer />
+        </body>
+      </LanguageProvider>
     </html>
   );
 }
