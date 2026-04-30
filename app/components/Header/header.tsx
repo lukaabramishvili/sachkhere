@@ -11,7 +11,7 @@ const Header = () => {
   const { language } = useLanguage();
 
   return (
-    <div className="relative flex items-center justify-around bg-[#32404A] min-h-20 max-h-20 w-full">
+    <div className="relative flex items-center justify-around bg-gradient-to-b from-[#162542] to-[#0092d6] min-h-20 max-h-20 w-full">
       <div className="absolute cursor-pointer top-[20%] left-[12%] w-32 h-32 bg-white border-gray-200 border-4 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transform transition duration-300 flex items-center justify-center">
         <Link href={"/"}>
           <div className="relative w-[90px] h-[90px]">
