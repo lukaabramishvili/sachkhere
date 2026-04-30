@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import english from "../../../../public/languageToggle/eng.png";
-import georgian from "../../../../public/languageToggle/geo.png";
+import english from "../../../public/languageToggle/eng.png";
+import georgian from "../../../public/languageToggle/geo.png";
 import { useState } from "react";
 import { useLanguage } from "../languageContext";
 
@@ -22,12 +22,8 @@ export default function LanguageToggle() {
     <div>
       {loading ? (
         <div className="fixed inset-0 flex items-center justify-center bg-white dark:bg-black z-50">
-          <div
-            className="w-20 h-20 border-4 border-transparent text-blue-400 text-4xl animate-spin flex items-center justify-center border-t-blue-400 rounded-full"
-          >
-            <div
-              className="w-16 h-16 border-4 border-transparent text-red-400 text-2xl animate-spin flex items-center justify-center border-t-red-400 rounded-full"
-            ></div>
+          <div className="w-20 h-20 border-4 border-transparent text-blue-400 text-4xl animate-spin flex items-center justify-center border-t-blue-400 rounded-full">
+            <div className="w-16 h-16 border-4 border-transparent text-red-400 text-2xl animate-spin flex items-center justify-center border-t-red-400 rounded-full"></div>
           </div>
         </div>
       ) : (
@@ -36,9 +32,21 @@ export default function LanguageToggle() {
           onClick={handleToggle}
         >
           {language === "eng" ? (
-            <Image className="w-10" src={english.src} width={50} height={50} alt="English" />
+            <Image
+              className="w-10"
+              src={english.src}
+              width={50}
+              height={50}
+              alt="English"
+            />
           ) : (
-            <Image className="w-10" src={georgian.src} width={50} height={50} alt="Georgian" />
+            <Image
+              className="w-10"
+              src={georgian.src}
+              width={50}
+              height={50}
+              alt="Georgian"
+            />
           )}
         </div>
       )}
