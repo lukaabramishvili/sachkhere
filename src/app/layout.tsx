@@ -1,6 +1,6 @@
 import Header from "./components/Header/header";
 import Footer from "./components/Footer/footer";
-import "./globals.css";
+// import "./globals.css";
 import { LanguageProvider } from "./context/languageContext";
 
 export default function RootLayout({
@@ -13,7 +13,7 @@ export default function RootLayout({
       <LanguageProvider>
         <body>
           <Header />
-            {children}
+          {children}
           <Footer />
         </body>
       </LanguageProvider>
