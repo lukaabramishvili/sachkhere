@@ -10,7 +10,7 @@ const Footer = () => {
   const { language } = useLanguage();
 
   return (
-    <footer className="flex flex-col items-center justify-center gap-4 mt-8 pb-8 bg-gradient-to-t from-[#162542] to-[#0092d6] text-white py-4 min-h-[120px]">
+    <footer className="flex flex-col items-center justify-center gap-4 mt-8 pb-8 bg-gradient-to-b from-[#162542] to-[#0092d6] text-white py-4 min-h-[120px]">
       <div className="cursor-pointer w-32 h-32 bg-white border-gray-200 border-4 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transform transition duration-300 flex items-center justify-center mt-[-5.5rem]">
         <Link href={"/"}>
           <div className="relative w-[90px] h-[90px]">
