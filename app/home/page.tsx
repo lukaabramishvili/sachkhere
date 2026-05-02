@@ -1,5 +1,6 @@
 'use client';
 
+import Slider from "../components/Slider/slider";
 import { useLanguage } from "../context/languageContext";
 
 export default function HomePage() {
@@ -16,6 +17,10 @@ export default function HomePage() {
       <div className="fixed inset-0 bg-black/60 -z-10" />
 
       <div className="relative z-10">
+
+        <section className="min-h-screen flex flex-col items-center justify-center text-center px-6">
+          <Slider />
+        </section>
 
         <section className="min-h-screen flex flex-col items-center justify-center text-center px-6">
 
