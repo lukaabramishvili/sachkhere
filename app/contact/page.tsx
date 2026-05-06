@@ -85,7 +85,7 @@ export default function ContactPage() {
   ];
 
   return (
-    <div className="relative min-h-screen bg-slate-950 text-white overflow-hidden">
+    <div className="relative min-h-screen pt-8 pb-8 bg-slate-950 text-white overflow-hidden">
       <div className="fixed inset-0 bg-[radial-gradient(circle_at_top,rgba(0,150,230,0.25),transparent_35%),linear-gradient(180deg,#07101f_0%,#04101b_48%,#07131f_100%)] -z-10" />
       <div className="max-w-7xl mx-auto px-6 py-12 relative z-10">
         <div className="mb-10 rounded-[32px] border border-white/10 bg-slate-950/80 p-10 shadow-2xl backdrop-blur-xl">
