@@ -85,10 +85,17 @@ export default function ContactPage() {
   ];
 
   return (
-    <div className="relative min-h-screen pt-8 pb-8 bg-slate-950 text-white overflow-hidden">
-      <div className="fixed inset-0 bg-[radial-gradient(circle_at_top,rgba(0,150,230,0.25),transparent_35%),linear-gradient(180deg,#07101f_0%,#04101b_48%,#07131f_100%)] -z-10" />
+    <div className="relative min-h-screen pt-8 pb-8  text-white overflow-hidden">
+      <div
+        className="fixed inset-0 bg-cover bg-center -z-10"
+        style={{ backgroundImage: "url('/contactBackground.png')" }}
+      />
+
+      <div className="fixed inset-0 bg-black/60 -z-10" />
+      
+      <div className="fixed inset-0 -z-10" />
       <div className="max-w-7xl mx-auto px-6 py-12 relative z-10">
-        <div className="mb-10 rounded-[32px] border border-white/10 bg-slate-950/80 p-10 shadow-2xl backdrop-blur-xl">
+        <div className="mb-10 rounded-[32px] border border-white/10  p-10 shadow-2xl backdrop-blur-xl">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-3xl">
               <p className="text-sm uppercase tracking-[0.35em] text-cyan-300 opacity-80 mb-3">
