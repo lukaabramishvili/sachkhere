@@ -14,7 +14,7 @@ export default function HomePage() {
         style={{ backgroundImage: "url('/cover.webp')" }}
       />
 
-      <div className="fixed inset-0 bg-black/60 -z-10" />
+      <div className="fixed inset-0 bg-black/20 -z-10" />
 
       <div className="relative z-10">
 
