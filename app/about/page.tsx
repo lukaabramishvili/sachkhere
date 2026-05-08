@@ -49,10 +49,18 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="relative min-h-screen bg-slate-950 text-white overflow-hidden">
-      <div className="fixed inset-0 bg-[radial-gradient(circle_at_top,rgba(0,150,230,0.25),transparent_35%),linear-gradient(180deg,#07101f_0%,#04101b_48%,#07131f_100%)] -z-10" />
-      <div className="absolute inset-x-0 top-0 h-96 bg-[radial-gradient(circle_at_top_left,rgba(14,165,233,0.25),transparent_30%)] blur-3xl" />
-      <div className="absolute inset-x-0 bottom-0 h-96 bg-[radial-gradient(circle_at_bottom_right,rgba(14,165,233,0.18),transparent_30%)] blur-3xl" />
+    <div className="relative min-h-screen text-white overflow-hidden">
+
+      <div
+        className="fixed inset-0 bg-cover bg-center -z-10"
+        style={{ backgroundImage: "url('/aboutUs.png')" }}
+      />
+
+
+
+      <div className="fixed inset-0 -z-10" />
+      <div className="absolute inset-x-0 top-0 h-96 blur-3xl" />
+      <div className="absolute inset-x-0 bottom-0 h-96 blur-3xl" />
 
       <main className="relative z-10">
         <section className="pt-24 pb-14 px-6 text-center">
@@ -78,7 +86,7 @@ export default function AboutPage() {
             {sections.map((item) => (
               <div
                 key={item.title}
-                className="rounded-[32px] border border-white/10 bg-white/5 p-8 shadow-xl shadow-slate-950/50 backdrop-blur-xl"
+                className="rounded-[32px] border border-white/10 bg-slate-900/80 p-8 shadow-xl shadow-slate-950/50 backdrop-blur-xl"
               >
                 <h2 className="text-2xl font-bold text-white">{item.title}</h2>
                 <p className="mt-4 text-slate-300 leading-7">{item.description}</p>
@@ -104,7 +112,7 @@ export default function AboutPage() {
         </section>
 
         <section className="px-6 pb-20">
-          <div className="max-w-6xl mx-auto rounded-[40px] border border-white/10 bg-white/5 p-10 shadow-2xl shadow-slate-950/50 backdrop-blur-xl">
+          <div className="max-w-6xl mx-auto rounded-[40px] border border-white/10 bg-slate-900/80 p-10 shadow-2xl shadow-slate-950/50 backdrop-blur-xl">
             <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr] lg:items-center">
               <div>
                 <p className="text-sm uppercase tracking-[0.35em] text-cyan-300 opacity-80">

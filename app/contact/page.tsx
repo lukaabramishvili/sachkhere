@@ -91,12 +91,10 @@ export default function ContactPage() {
         style={{ backgroundImage: "url('/contactBackground.png')" }}
       />
 
-      <div className="fixed inset-0 bg-black/60 -z-10" />
-      
       <div className="fixed inset-0 -z-10" />
       <div className="max-w-7xl mx-auto px-6 py-12 relative z-10">
-        <div className="mb-10 rounded-[32px] border border-white/10  p-10 shadow-2xl backdrop-blur-xl">
-          <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+        <div className="mb-10 rounded-[32px] border border-white/10 p-10 shadow-2xl bg-slate-950/90">
+          <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between ">
             <div className="max-w-3xl">
               <p className="text-sm uppercase tracking-[0.35em] text-cyan-300 opacity-80 mb-3">
                 {language === "eng" ? "Contact" : "კონტაქტი"}
