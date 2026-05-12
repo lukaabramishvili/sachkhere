@@ -88,7 +88,7 @@ export default function ContactPage() {
     <div className="relative min-h-screen pt-8 pb-8  text-white overflow-hidden">
       <div
         className="fixed inset-0 bg-cover bg-center -z-10"
-        style={{ backgroundImage: "url('/contactBackground.png')" }}
+        style={{ backgroundImage: "url('/contactPage.png')" }}
       />
 
       <div className="fixed inset-0 -z-10" />
