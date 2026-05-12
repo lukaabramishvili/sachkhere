@@ -28,7 +28,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="w-full z-20 mb-8">
+    <header className="w-full z-20 mb-8 relative">
       <div
         className={`bg-gradient-to-t from-transparent to-[#0092d6] flex items-center justify-between px-6 transition-all duration-500 ease-in-out overflow-visible ${
           menuOpen
@@ -50,9 +50,12 @@ const Header = () => {
           </div>
         </Link>
 
-        <ul className="hidden md:flex items-center justify-center text-white font-bold text-xl gap-1">
+        <ul className="hidden md:flex items-center justify-center text-white font-bold text-xl gap-[0.18rem]">
           {navLinks.map((link) => (
-            <li key={link.href} className="hover:scale-110 transform transition duration-300">
+            <li
+              key={link.href}
+              className="hover:scale-110 transform transition duration-300"
+            >
               <Link
                 href={link.href}
                 className="py-2 px-4 hover:bg-white hover:text-black rounded-lg block"
