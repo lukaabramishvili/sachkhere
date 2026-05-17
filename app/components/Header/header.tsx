@@ -98,7 +98,7 @@ const Header = () => {
           </button>
         </div>
 
-        <ul className="flex flex-col items-center text-white font-bold text-lg pb-6 gap-1">
+        <ul className="flex flex-col items-center text-white font-bold text-lg pb-6 gap-0.5">
           {navLinks.map((link) => (
             <li key={link.href} className="w-full text-center">
               <Link
